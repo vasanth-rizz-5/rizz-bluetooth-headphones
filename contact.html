@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasanth Rizz | Contact</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    /* Add this to styles.css or inside <style> */
+        :root {
+        
+            --header-font: "Montserrat", sans-serif;
+          }
+          
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: var(--header-font);
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .col-lg-6 {
+      flex: 1;
+      min-width: 300px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 470px;
+      border: 0;
+      border-radius: 10px;
+    }
+    .form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .form input, .form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .form button {
+      padding: 12px 25px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .form button:hover {
+      background-color: #232424;
+    }
+    @media(max-width: 768px){
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Contact Us</h1>
+
+  <div class="container">
+    <div class="row">
+      
+      <!-- Google Map -->
+      <div class="col-lg-6">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12323.637654621522!2d77.53557067642083!3d8.08642311557671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04ed3d2a087861%3A0x1e790e896aeffaa0!2sKanniyakumari%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1745747912534!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="form">
+            <form id="contactForm">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+
+  <!-- Popup Script -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function() {
+        setTimeout(function() {
+            alert("Thank you for contacting us!\n\nWe have received your message.");
+            document.getElementById('contactForm').reset();
+        }, 500);
+    });
+    </script>
+    
+  
+    
+</body>
+</html>

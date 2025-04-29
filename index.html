@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="styles.css" />
+   <!-- Primary Meta Tags -->
+<title>Vasanth Rizz | Bluetooth Headphones</title>
+<meta name="title" content="Vasanth Rizz | Bluetooth Headphones">
+<meta name="description" content="Explore premium Bluetooth Headphones by Vasanth Rizz – crystal clear sound, deep bass, and all-day comfort.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="./assets/favicon.ico">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vasanth-rizz-5.github.io/vasanth-rizz/"> <!-- Replace with your URL -->
+<meta property="og:title" content="Vasanth Rizz | Bluetooth Headphones">
+<meta property="og:description" content="Explore premium Bluetooth Headphones by Vasanth Rizz – crystal clear sound, deep bass, and all-day comfort.">
+<meta property="og:image" content="./assets/banner.jpg"> <!-- Replace with actual image -->
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://vasanth-rizz-5.github.io/vasanth-rizz/"> <!-- Replace with your URL -->
+<meta name="twitter:title" content="Vasanth Rizz | Bluetooth Headphones">
+<meta name="twitter:description" content="Explore premium Bluetooth Headphones by Vasanth Rizz – crystal clear sound, deep bass, and all-day comfort.">
+<meta name="twitter:image" content="./assets/banner.jpg"> <!-- Replace with actual image -->
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vasanth Rizz",
+    "url": "https://vasanth-rizz-5.github.io/vasanth-rizz/",  <!-- Replace with your actual website -->
+    "sameAs": [
+      "http://vasanthrizz.blogspot.com",
+      "https://www.instagram.com/software_developer_vasanthrizz?igsh=MWtvZWxkaWxkdnB2ag==",
+      "https://www.pinterest.com/vasanthrizz5",
+      "https://www.youtube.com/@vasanthrizz5"
+    ]
+  }
+  </script>
+  
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/logo1.png" alt="logo" class="logo-dark" />
+           
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="contact.html"><button class="btn">Buy Now</button></a></li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+        <img src="assets/header-bg.png" alt="header_bg" class="header-bg" />
+        <div class="header__image__content">
+          <h4>Price: ₹4000</h4>
+          <a href="contact.html"><button class="btn">Add to cart</button></a>
+        </div>
+      </div>
+      <div class="header__content">
+        <h1>Rizz <br>Bluetooth<br />Headphone</h1>
+        <p>
+          Experience next-level sound with our premium collection of Bluetooth headphones, crafted for pure audio perfection.
+        </p>
+      </div>
+    </header>
+
+    <section class="product" id="product">
+      <div class="section__container product__container">
+        <div class="product__grid">
+          <div class="product__image">
+            <img id="main-product-image" src="assets/12.png" alt="Product" />
+          </div>
+          <div class="product__content">
+            <div class="product__card">
+              <h4>Rizz Bluetooth</h4>
+              <p>Bluetooth 5.2 - ACC codec</p>
+              <a href="#" onclick="openModal()" style="text-decoration: underline;">Learn More</a>
+
+
+            </div>
+            <div class="product__card">
+              <h4>Quality sound</h4>
+              <a href="#" onclick="openModal()" style="text-decoration: underline;">Learn More</a>
+
+
+            </div>
+            <div class="product__card">
+              <div class="product__colors">
+                <div onclick="selectColor(this, 'assets/12.png')" style="background-color: rgb(36, 33, 33);"><i class="ri-check-line"></i></div>
+                <div onclick="selectColor(this, 'assets/13.png')" style="background-color: #eee0b3;"></div>
+                <div onclick="selectColor(this, 'assets/11.png')" style="background-color: rgb(13, 21, 43);"></div>
+                <div onclick="selectColor(this, 'assets/14.png')" style="background-color: rgb(20, 51, 28);"></div>
+                <div onclick="selectColor(this, 'assets/15.png')" style="background-color: rgb(224, 224, 224);"></div>
+              </div>
+              <p>Available colors</p>
+            </div>
+          </div>
+        </div>
+        <div class="product__btn">
+          <a href="contact.html"><button class="btn">Add to cart</button></a>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Popup Modal -->
+<div id="specsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Headphone Specifications</h2>
+
+    <!-- Star Rating -->
+    <div style="margin: 10px 0;">
+      <span style="color: gold; font-size: 20px;">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+      <small>(4.5/5 rating)</small>
+    </div>
+
+    <!-- Specifications List -->
+    <ul>
+      <li><strong>Bluetooth Version:</strong> 5.2</li>
+      <li><strong>Audio Codec:</strong> AAC / SBC / aptX</li>
+      <li><strong>Battery Life:</strong> Up to 40 hours playback</li>
+      <li><strong>Charging Time:</strong> 1.5 hours (Fast Charging)</li>
+      <li><strong>Noise Cancellation:</strong> Active Noise Cancellation (ANC)</li>
+      <li><strong>Water Resistance:</strong> IPX6 (Sweat & Splash Proof)</li>
+      <li><strong>Driver Size:</strong> 45mm Dynamic Bass Boost Drivers</li>
+      <li><strong>Weight:</strong> 220g (Ultra Lightweight)</li>
+      <li><strong>Connectivity:</strong> Dual Device Pairing Supported</li>
+      <li><strong>Built-in Mic:</strong> Yes, with ENC (Environmental Noise Cancellation)</li>
+      <li><strong>Warranty:</strong> 1 Year Replacement Warranty</li>
+    </ul>
+
+    <!-- Buy Button (optional) -->
+    <div style="text-align: center; margin-top: 20px;">
+      <button style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Buy Now
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+    <section class="section__container store__container" id="store">
+      <h2>JBL beats design</h2>
+      <p>
+        Experience premium sound and bold design with our exclusive JBL Beats collection.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 1001</h4>
+              <img src="assets/store-1.png" alt="store" />
+              <h3>Price- ₹4000</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 1002</h4>
+              <img src="assets/store-2.png" alt="store" />
+              <h3>Price- ₹4200</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 1003</h4>
+              <img src="assets/store-3.png" alt="store" />
+              <h3>Price- ₹3500</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 1004</h4>
+              <img src="assets/store-4.png" alt="store" />
+              <h3>Price- ₹3000</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 1005</h4>
+              <img src="assets/store-5.png" alt="store" />
+              <h3>Price- ₹4500</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 1006</h4>
+              <img src="assets/store-6.png" alt="store" />
+              <h3>Price- ₹3800</h3>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      
+      <div class="section__container footer__container">
+        <!-- Left Side: Bluetooth headphone definition -->
+        <div class="footer__left">
+          <p><strong>Rizz Bluetooth Headphones</strong><br>— Enjoy high-quality sound and comfort for all your listening needs. Stay connected and feel the beat wherever you go!</p>
+        </div>
+    
+        <!-- Centered: Logo & Socials -->
+        <div class="footer__center">
+          <img src="assets/logo.png" alt="logo" />
+          <ul class="footer__socials">
+            <li>
+              <a href="http://vasanthrizz.blogspot.com" target="_blank"><i class="ri-blogger-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/software_developer_vasanthrizz?igsh=MWtvZWxkaWxkdnB2ag==" target="_blank"><i class="ri-instagram-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/vasanthrizz5" target="_blank"><i class="ri-pinterest-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@vasanthrizz5" target="_blank"><i class="ri-youtube-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Right Side: Navigation links -->
+        <div class="footer__right">
+          <ul class="footer__nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    
+      <div class="footer__bar">
+        © Copyright - 2025 <a href="https://vasanth-rizz-5.github.io/vasanth-rizz/" style="text-decoration: none; color: #dcdcdc;">Vasanth_Rizz</a>
+      </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+  
+        function selectColor(element, imageSrc) {
+          // Change the main image
+          document.getElementById('main-product-image').src = imageSrc;
+      
+          // Remove all existing check marks
+          const colorOptions = document.querySelectorAll('.product__colors div');
+          colorOptions.forEach((div) => {
+            div.innerHTML = '';
+          });
+      
+          // Add check mark to the clicked color
+          element.innerHTML = '<i class="ri-check-line"></i>';
+        }
+
+
+
+        function openModal() {
+          document.getElementById('specsModal').style.display = 'block';
+        }
+        
+        function closeModal() {
+          document.getElementById('specsModal').style.display = 'none';
+        }
+        
+        // Optional: Close when clicking outside modal
+        window.onclick = function(event) {
+          const modal = document.getElementById('specsModal');
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+      
+   
+    
+  </body>
+</html>
