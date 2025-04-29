@@ -612,3 +612,30 @@ img.header-bg {
 .form button:hover {
   background-color: #0056b3;
 }
+/* ✅ Responsive for Mobile Devices Only */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px; /* 👈 Adds bottom space inside footer */
+  }
+
+  .footer__left,
+  .footer__center,
+  .footer__right {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer__nav {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+}
